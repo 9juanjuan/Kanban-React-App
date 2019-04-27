@@ -6,10 +6,10 @@ import KanbanBoard from './KanbanBoard'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div> 
+    
         <KanbanBoard cards={cardsList}/>
-      </header>
+  
     </div>
   );
 }
