@@ -23,8 +23,18 @@ render() {
             </div>
         );
     }
+    let sideColor= {
+        position: 'absolute',
+        zIndex: -1,
+        top: 0,
+        bottom: 0,
+        left: 0,
+        width: 7,
+        backgroundColor: this.props.color
+    };
         return (
             <div className="card">
+                <div style={sideColor} />
                 <div className={
                     this.state.showDetails? "card__title card__title--is-open" : "card__totle"
                  } onClick={this.toggleDetails.bind(this)}>
