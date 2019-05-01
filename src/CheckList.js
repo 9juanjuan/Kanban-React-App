@@ -1,6 +1,4 @@
-import React, { Component } from 'react'
-import { tsTypeAliasDeclaration, tsThisType } from '@babel/types';
-
+import React, { Component } from 'react';
 class CheckList extends Component {
     render() {
         let tasks = this.props.tasks.map((task) => (
